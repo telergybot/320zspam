@@ -13,10 +13,10 @@ local function check_member(cb_extra, success, result)
         set_owner = member_id ,
         settings = {
           set_name = string.gsub(msg.to.print_name, '_', ' '),
-          lock_name = 'yes',
-          lock_photo = 'no',
-          lock_member = 'no',
-          flood = 'yes'
+          قفل اسم = 'yes',
+          قفل عکس = 'no',
+          قفل اعضا = 'no',
+          ضداسپم = 'yes'
         }
       }
       save_data(_config.moderation.data, data)
@@ -838,28 +838,28 @@ local function run(msg, matches)
 end
 return {
   patterns = {
-  "^[!/](add)$",
-  "^[!/](rem)$",
-  "^[!/](rules)$",
-  "^[!/](about)$",
-  "^[!/](setname) (.*)$",
-  "^[!/](setphoto)$",
-  "^[!/](promote) (.*)$",
-  "^[!/](help)$",
-  "^[!/](clean) (.*)$",
-  "^[!/](demote) (.*)$",
-  "^[!/](set) ([^%s]+) (.*)$",
-  "^[!/](lock) (.*)$",
-  "^[!/](setowner) (%d+)$",
-  "^[!/](owner)$",
-  "^[!/](res) (.*)$",
-  "^[!/](setgpowner) (%d+) (%d+)$",-- (group id) (owner id)
-  "^[!/](unlock) (.*)$",
-  "^[!/](setflood) (%d+)$",
-  "^[!/](settings)$",
-  "^[!/](modlist)$",
-  "^[!/](newlink)$",
-  "^[!/](link)$",
+  "^[!/.](add)$",
+  "^[!/.](rem)$",
+  "^[!/.](rules)$",
+  "^[!/.](about)$",
+  "^[!/.](setname) (.*)$",
+  "^[!/.](setphoto)$",
+  "^[!/.](promote) (.*)$",
+  "^[!/.](help)$",
+  "^[!./](clean) (.*)$",
+  "^[!/.](demote) (.*)$",
+  "^[!/.](set) ([^%s]+) (.*)$",
+  "^[!/.](lock) (.*)$",
+  "^[!/.](setowner) (%d+)$",
+  "^[!/.](owner)$",
+  "^[!/.](res) (.*)$",
+  "^[!/.](setgpowner) (%d+) (%d+)$",-- (group id) (owner id)
+  "^[!/.](unlock) (.*)$",
+  "^[!/.](setflood) (%d+)$",
+  "^[!/.](settings)$",
+  "^[!/.](modlist)$",
+  "^[!/.](newlink)$",
+  "^[!/.](link)$",
   "%[(photo)%]",
   "^!!tgservice (.+)$",
   },
