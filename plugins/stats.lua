@@ -120,7 +120,7 @@ local function run(msg, matches)
         return
       end
     end
-    if matches[2] == "teleseed" then -- Put everything you like :)
+    if matches[2] == "info320" then -- Put everything you like :)
       if not is_admin(msg) then
         return "For admins only !"
       else
@@ -138,11 +138,11 @@ local function run(msg, matches)
 end
 return {
   patterns = {
-    "^[!/]([Ss]tats)$",
-    "^[!/]([Ss]tatslist)$",
-    "^[!/]([Ss]tats) (group) (%d+)",
-    "^[!/]([Ss]tats) (teleseed)",-- Put everything you like :)
-		"^[!/]([Tt]eleseed)"-- Put everything you like :)
+    "^[!/.]([Ss]tats)$",
+    "^[!/.]([Ss]tatslist)$",
+    "^[!/.]([Ss]tats) (group) (%d+)",
+    "^[!/.]([Ss]tats) (info320)",-- Put everything you like :)
+		"^[!/]([Ii]nfo320)"-- Put everything you like :)
     }, 
   run = run
 }
