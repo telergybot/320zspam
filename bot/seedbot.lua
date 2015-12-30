@@ -4,7 +4,7 @@ package.cpath = package.cpath .. ';.luarocks/lib/lua/5.2/?.so'
 
 require("./bot/utils")
 
-VERSION = '1.0'
+VERSION = '1.6'
 
 -- This function is called when tg receive a msg
 function on_msg_receive (msg)
@@ -222,7 +222,7 @@ function create_config( )
     },
     sudo_users = {76303145},--Sudo users
     disabled_channels = {},
-    realm = {76303145},--Realms Id
+    realm = {71065196},--Realms Id
     moderation = {data = 'data/moderation.json'},
     about_text = [[320 anti spam v1.2
  
